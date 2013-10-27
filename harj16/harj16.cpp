@@ -1,7 +1,7 @@
 /*********************************************************************
 Tehtävä: HARJOITUS 16
 Tekijä: Pekka Melgin
-PVM: 8.10.2013
+PVM: 27.10.2013
 Kuvaus:
 Tee ohjelma, joka kysyy henkilotietosi ja tallentaa ne tietueeseen.
 Tietueeseen talletetaan seuraavat tiedot:
