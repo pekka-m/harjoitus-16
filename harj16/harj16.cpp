@@ -15,6 +15,7 @@ kengannumero (kokonaisluku)
 Ohjelma tulostaa lopuksi tietueen tiedot naytölle.
 *********************************************************************/
 #include <iostream> 
+
 using namespace std; 
 struct henktiedot 
 { 
@@ -30,16 +31,18 @@ int main()
 	henktiedot henktiedot;
 
 	cout << "Anna etunimi :";
-	cin >> ws >> henktiedot.etunimi;
+	cin >> henktiedot.etunimi;
 	cout << "Anna kengännumero :";
-	cin >> ws >> henktiedot.kengannumero;
+	cin >> henktiedot.kengannumero;
 	cout << "Anna sukunimi :";
-	cin >> ws >> henktiedot.sukunimi;
+	cin >> henktiedot.sukunimi;
 	cout << "Anna koulumatkan pituus :";
-	cin >> ws >> henktiedot.koulumatka;
+	cin >> henktiedot.koulumatka;
 	cout << "Anna osoitteesi :";
-	cin >> ws >> henktiedot.osoite;
 	cin.get();
+	cin.get(henktiedot.osoite,20);
 	cout << "Anna postinumerosi :";
-	cin >> ws >> henktiedot.postinumero;
+	cin >> henktiedot.postinumero;
+
+	cout << henktiedot.etunimi << " " << henktiedot.sukunimi << endl << henktiedot.osoite << endl << henktiedot.postinumero << endl << henktiedot.kengannumero << endl << henktiedot.koulumatka << endl;
 }
